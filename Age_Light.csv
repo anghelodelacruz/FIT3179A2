@@ -1,0 +1,99 @@
+﻿Age Group,Light Condition,Sum
+0-4,Dark No street lights,15
+0-4,Dark Street lights off,3
+0-4,Dark Street lights on,92
+0-4,Dark Street lights unknown,2
+0-4,Day,614
+0-4,Dusk/Dawn,69
+0-4,Unknown,4
+5-12,Dark No street lights,36
+5-12,Dark Street lights off,3
+5-12,Dark Street lights on,174
+5-12,Dark Street lights unknown,3
+5-12,Day,1183
+5-12,Dusk/Dawn,222
+5-12,Unknown,3
+13-15,Dark No street lights,46
+13-15,Dark Street lights off,2
+13-15,Dark Street lights on,166
+13-15,Dark Street lights unknown,3
+13-15,Day,533
+13-15,Dusk/Dawn,90
+13-15,Unknown,5
+16-17,Dark No street lights,88
+16-17,Dark Street lights off,11
+16-17,Dark Street lights on,306
+16-17,Dark Street lights unknown,11
+16-17,Day,615
+16-17,Dusk/Dawn,92
+16-17,Unknown,4
+17-21,Dark No street lights,356
+17-21,Dark Street lights off,43
+17-21,Dark Street lights on,1641
+17-21,Dark Street lights unknown,59
+17-21,Day,2551
+17-21,Dusk/Dawn,635
+17-21,Unknown,28
+22-25,Dark No street lights,204
+22-25,Dark Street lights off,22
+22-25,Dark Street lights on,1130
+22-25,Dark Street lights unknown,27
+22-25,Day,2065
+22-25,Dusk/Dawn,471
+22-25,Unknown,20
+26-29,Dark No street lights,133
+26-29,Dark Street lights off,13
+26-29,Dark Street lights on,720
+26-29,Dark Street lights unknown,22
+26-29,Day,1797
+26-29,Dusk/Dawn,422
+26-29,Unknown,18
+30-39,Dark No street lights,266
+30-39,Dark Street lights off,26
+30-39,Dark Street lights on,1359
+30-39,Dark Street lights unknown,49
+30-39,Day,4289
+30-39,Dusk/Dawn,839
+30-39,Unknown,23
+40-49,Dark No street lights,183
+40-49,Dark Street lights off,23
+40-49,Dark Street lights on,938
+40-49,Dark Street lights unknown,21
+40-49,Day,3821
+40-49,Dusk/Dawn,682
+40-49,Unknown,27
+50-59,Dark No street lights,122
+50-59,Dark Street lights off,14
+50-59,Dark Street lights on,581
+50-59,Dark Street lights unknown,18
+50-59,Day,2673
+50-59,Dusk/Dawn,471
+50-59,Unknown,23
+60-64,Dark No street lights,31
+60-64,Dark Street lights off,6
+60-64,Dark Street lights on,174
+60-64,Dark Street lights unknown,9
+60-64,Day,831
+60-64,Dusk/Dawn,127
+60-64,Unknown,6
+64-69,Dark No street lights,20
+64-69,Dark Street lights off,2
+64-69,Dark Street lights on,89
+64-69,Dark Street lights unknown,3
+64-69,Day,639
+64-69,Dusk/Dawn,80
+64-69,Unknown,6
+70+,Dark No street lights,22
+70+,Dark Street lights on,159
+70+,Dark Street lights unknown,4
+70+,Day,1518
+70+,Dusk/Dawn,152
+70+,Unknown,9
+unknown,Dark No street lights,63
+unknown,Dark Street lights off,11
+unknown,Dark Street lights on,467
+unknown,Dark Street lights unknown,16
+unknown,Day,1350
+unknown,Dusk/Dawn,210
+unknown,Unknown,14
+,,
