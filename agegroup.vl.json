@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/anghelodelacruz/FIT3179A2/main/accident%20persons%20smol.csv"
+  },
+  "width": {"step": 12},
+  "mark": "bar",
+  "encoding": {
+    "column": {
+      "field": "Light Condition Desc",
+      "type": "ordinal",
+      "spacing": 10
+    },
+    "y": {
+      "aggregate": "count",
+      "field": "ACCIDENT_NO",
+      "title": "population",
+      "axis": {"grid": false}
+    },
+    "x": {"field": "Age Group", "axis": {"title": ""}},
+    "color": {"field": "Age Group", "scale": {"range": ["#675193", "#ca8861"]}}
+  },
+  "config": {"view": {"stroke": "transparent"}, "axis": {"domainWidth": 1}}
+}
