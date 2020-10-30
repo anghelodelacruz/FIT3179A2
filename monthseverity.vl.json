@@ -1,0 +1,15 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "A bar chart showing the US population distribution of age groups in 2000.",
+  "height": {"step": 17},
+  "data": {
+    "url": "https://raw.githubusercontent.com/anghelodelacruz/FIT3179A2/main/2005.csv"
+  },
+  "transform": [{"filter": {"field": "SPEED_ZONE", "lte": "120"}}],
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "ACCIDENTDATE", "type": "temporal", "timeUnit": "month"},
+    "y": {"aggregate": "average", "field": "SEVERITY"}
+  },
+  "config": {}
+}
