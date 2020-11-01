@@ -15,7 +15,8 @@
       "aggregate": "count",
       "field": "ACCIDENT_NO",
       "title": "population",
-      "axis": {"grid": false}
+      "axis": {"grid": false},
+      "scale": {"type": "log"}
     },
     "x": {"field": "Age Group", "axis": {"title": ""}},
     "color": {"field": "Age Group", "scale": {"range": ["#675193", "#ca8861"]}}
