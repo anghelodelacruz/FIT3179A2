@@ -1,0 +1,70 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/anghelodelacruz/FIT3179A2/main/accidents%20persons%202005.csv"
+  },
+  "transform": [{"filter": "datum.SPEED_ZONE < 130"}],
+  "width": 200,
+  "background": "#121f1f",
+  "title": {"text": "", "color": "white"},
+  "mark": "bar",
+  "encoding": {
+    "column": {
+      "field": "Light Condition Desc",
+      "header": {"labelColor": "white", "titleColor": "white"},
+      "type": "ordinal",
+      "spacing": 10
+    },
+    "y": {
+      "aggregate": "count",
+      "field": "ACCIDENT_NO",
+      "title": "Number of Accidents",
+      "axis": {"grid": false},
+      "scale": {"type": "log"}
+    },
+    "x": {
+      "field": "SPEED_ZONE",
+      "axis": {"title": ""},
+      "type": "ordinal",
+      "sort": ["40", "50", "60", "70", "80", "90", "100", "110"]
+    },
+    "color": {
+      "condition": [
+        {
+          "test": "datum['Light Condition Desc'] == 'Dark No street lights'",
+          "value": "#e41a1c"
+        },
+        {
+          "test": "datum['Light Condition Desc'] == 'Dark Street lights off'",
+          "value": "#377eb8"
+        },
+        {
+          "test": "datum['Light Condition Desc'] == 'Dark Street lights on'",
+          "value": "#4daf4a"
+        },
+        {
+          "test": "datum['Light Condition Desc'] == 'Dark Street lights unknown'",
+          "value": "#984ea3"
+        },
+        {"test": "datum['Light Condition Desc'] == 'Day'", "value": "#ff7f00"},
+        {
+          "test": "datum['Light Condition Desc'] == 'Dusk/Dawn'",
+          "value": "#ffff33"
+        },
+        {
+          "test": "datum['Light Condition Desc'] == 'Unknown'",
+          "value": "#a65628"
+        }
+      ]
+    }
+  },
+  "config": {
+    "view": {"stroke": "transparent"},
+    "axis": {
+      "domainColor": "white",
+      "labelColor": "white",
+      "titleColor": "white"
+    },
+    "legend": {"titleColor": "white", "labelColor": "white"}
+  }
+}
