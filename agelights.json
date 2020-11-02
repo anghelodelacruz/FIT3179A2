@@ -5,15 +5,12 @@
   },
   "width": {"step": 14},
   "background": "#121f1f",
-  "title": {
-    "text": "",
-    "color": "white"
-  },
+  "title": {"text": "", "color": "white"},
   "mark": "bar",
   "encoding": {
     "column": {
       "field": "Light Condition Desc",
-      "header":{"labelColor":"white","titleColor":"white"},
+      "header": {"labelColor": "white", "titleColor": "white"},
       "type": "ordinal",
       "spacing": 10
     },
@@ -25,7 +22,14 @@
       "scale": {"type": "log"}
     },
     "x": {"field": "Age Group", "axis": {"title": ""}},
-    "color": {"value": "white"}
+    "color": {"condition":[
+      {"test": "datum['Light Condition Desc'] == 'Dark No street lights'", "value": "#e41a1c"}, 
+      {"test": "datum['Light Condition Desc'] == 'Dark Street lights off'", "value": "#377eb8"},
+      {"test": "datum['Light Condition Desc'] == 'Dark Street lights on'", "value": "#4daf4a"},
+      {"test": "datum['Light Condition Desc'] == 'Dark Street lights unknown'", "value": "#984ea3"},
+      {"test": "datum['Light Condition Desc'] == 'Day'", "value": "#ff7f00"},
+      {"test": "datum['Light Condition Desc'] == 'Dusk/Dawn'", "value": "#ffff33"},
+      {"test": "datum['Light Condition Desc'] == 'Unknown'", "value": "#a65628"}]}
   },
   "config": {
     "view": {"stroke": "transparent"},
