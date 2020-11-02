@@ -22,7 +22,14 @@
       "scale": {"type": "log"}
     },
     "x": {"field": "Inj Level Desc", "axis": {"title": ""}},
-    "color": {"value": "white"}
+    "color": {"condition":[
+      {"test": "datum['Light Condition Desc'] == 'Dark No street lights'", "value": "#e41a1c"}, 
+      {"test": "datum['Light Condition Desc'] == 'Dark Street lights off'", "value": "#377eb8"},
+      {"test": "datum['Light Condition Desc'] == 'Dark Street lights on'", "value": "#4daf4a"},
+      {"test": "datum['Light Condition Desc'] == 'Dark Street lights unknown'", "value": "#984ea3"},
+      {"test": "datum['Light Condition Desc'] == 'Day'", "value": "#ff7f00"},
+      {"test": "datum['Light Condition Desc'] == 'Dusk/Dawn'", "value": "#ffff33"},
+      {"test": "datum['Light Condition Desc'] == 'Unknown'", "value": "#a65628"}]}
   },
   "config": {
     "view": {"stroke": "transparent"},
