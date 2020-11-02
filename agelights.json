@@ -3,7 +3,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/anghelodelacruz/FIT3179A2/main/accident%20persons%20smol.csv"
   },
-  "width": {"step": 14},
+  "width": 200,
   "background": "#121f1f",
   "title": {"text": "", "color": "white"},
   "mark": "bar",
