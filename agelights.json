@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/anghelodelacruz/FIT3179A2/main/accident%20persons%20smol.csv"
+  },
+  "width": {"step": 14},
+  "background": "#121f1f",
+  "title": {
+    "text": "Dot map of accidents in Victoria in 2005.",
+    "color": "white"
+  },
+  "mark": "bar",
+  "encoding": {
+    "column": {
+      "field": "Light Condition Desc",
+      "type": "ordinal",
+      "spacing": 10
+    },
+    "y": {
+      "aggregate": "count",
+      "field": "ACCIDENT_NO",
+      "title": "Number of Accidents",
+      "axis": {"grid": false},
+      "scale": {"type": "log"}
+    },
+    "x": {"field": "Age Group", "axis": {"title": ""}},
+    "color": {"value": "white"}
+  },
+  "config": {
+    "view": {"stroke": "transparent"},
+    "axis": {
+      "domainColor": "white",
+      "labelColor": "white",
+      "titleColor": "white",
+      "subtitleColor": "white"
+    },
+    "legend": {"titleColor": "white", "labelColor": "white"}
+  }
+}
