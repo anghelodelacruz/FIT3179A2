@@ -3,7 +3,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/anghelodelacruz/FIT3179A2/main/accident%20persons%20smol.csv"
   },
-  "width": {"step": 12},
+  "width": {"step": 14},
   "background": "#121f1f",
   "title": {
     "text": "Dot map of accidents in Victoria in 2005.",
