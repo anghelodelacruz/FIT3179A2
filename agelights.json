@@ -32,8 +32,7 @@
     "axis": {
       "domainColor": "white",
       "labelColor": "white",
-      "titleColor": "white",
-      "subtitleColor": "white"
+      "titleColor": "white"
     },
     "legend": {"titleColor": "white", "labelColor": "white"}
   }
