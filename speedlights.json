@@ -3,7 +3,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/anghelodelacruz/FIT3179A2/main/accidents%20persons%202005.csv"
   },
-  "transform": [{"filter": "datum.SPEED_ZONE < 130"}],
+  "transform": [{"filter":"datum.SPEED_ZONE < 130"}],
   "width": 200,
   "background": "#121f1f",
   "title": {"text": "", "color": "white"},
@@ -22,12 +22,7 @@
       "axis": {"grid": false},
       "scale": {"type": "log"}
     },
-    "x": {
-      "field": "SPEED_ZONE",
-      "axis": {"title": ""},
-      "type": "ordinal",
-      "sort": ["40", "50", "60", "70", "80", "90", "100", "110"]
-    },
+    "x": {"field": "SPEED_ZONE", "axis": {"title": "", "labelExpr": "slice(datum.value,0,3)"}, "type":"ordinal", "bin": {"maxbins": 20}},
     "color": {
       "condition": [
         {
