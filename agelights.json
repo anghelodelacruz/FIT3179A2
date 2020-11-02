@@ -6,13 +6,14 @@
   "width": {"step": 14},
   "background": "#121f1f",
   "title": {
-    "text": "Dot map of accidents in Victoria in 2005.",
+    "text": "",
     "color": "white"
   },
   "mark": "bar",
   "encoding": {
     "column": {
       "field": "Light Condition Desc",
+      "header":{"labelColor":"white","titleColor":"white"},
       "type": "ordinal",
       "spacing": 10
     },
